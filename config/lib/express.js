@@ -11,7 +11,7 @@ var config = require('../config'),
     compress = require('compression'),
     methodOverride = require('method-override'),
     helmet = require('helmet'),
-    consolidate = require('consolidate'),
+    //consolidate = require('consolidate'),
     path = require('path');
 
 /**
@@ -71,10 +71,10 @@ module.exports.initMiddleware = function (app) {
     app.use(methodOverride());
 
     // Add multipart handling middleware
-    app.use(multer({
-        dest: './uploads/',
-        inMemory: true
-    }));
+    // app.use(multer({
+    //     dest: './uploads/',
+    //     inMemory: true
+    // }));
 };
 
 /**
@@ -166,7 +166,7 @@ module.exports.init = function (db) {
     this.initMiddleware(app);
 
     // Initialize Express view engine
-    this.initViewEngine(app);
+    //this.initViewEngine(app);
 
     // Initialize Modules configuration
     //this.initModulesConfiguration(app);

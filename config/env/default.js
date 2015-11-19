@@ -8,6 +8,6 @@ module.exports = {
     },
     port: process.env.PORT || 8081,
     templateEngine: 'swig',
-    webDir: 'app',
+    webDir: 'www',
     jwtTokenSecret: process.env.TOKEN_SECRET || 'DEMO'
 };

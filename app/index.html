@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>WebPageV2</title>
+    <base href="/">
+
+    <!-- build:css(.) css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/angular-motion/dist/angular-motion.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap-additions/dist/bootstrap-additions.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) css/style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+
+</head>
+<body>
+
+    <div ui-view></div>
+
+    <!-- build:js(.) js/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.js"></script>
+    <script src="/bower_components/angular-strap/dist/angular-strap.js"></script>
+    <script src="/bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/owasp-password-strength-test/owasp-password-strength-test.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) js/scripts.js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/UseManager.js"></script>
+    <script src="js/controllers/NavBarCtrl.js"></script>
+    <script src="js/controllers/AuthenticationController.js"></script>
+    <script src="js/directives/passwordValidator.js"></script>
+    <script src="js/services/TokenInterceptor.js"></script>
+    <script src="js/services/AuthenticationService.js"></script>
+    <script src="js/services/PasswordValidator.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>
